@@ -54,7 +54,9 @@ a:focus-visible { outline: 2px solid var(--cue); outline-offset: 3px; border-rad
   font: 600 clamp(1.4rem, 4vw, 2rem)/1.35 var(--body); margin: 28px 0;
 }
 .stage em { color: var(--cue-fill); font-style: normal; }
-.stage { border-top: 6px solid transparent; border-image: var(--brand) 1; border-image-slice: 1 1 0 1; }
+/* Brand gradient bar along the top of the stage; keeps the rounded corners. */
+.stage { position: relative; overflow: hidden; }
+.stage::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 6px; background: var(--brand); }
 .stage .dot { color: var(--cue-fill); opacity: 0.8; }
 .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; margin: 16px 0; }
 .links { display: flex; flex-wrap: wrap; gap: 10px 24px; }
