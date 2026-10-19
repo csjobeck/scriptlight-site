@@ -62,3 +62,11 @@ a:focus-visible { outline: 2px solid var(--cue); outline-offset: 3px; border-rad
 .links { display: flex; flex-wrap: wrap; gap: 10px 24px; }
 footer { border-top: 1px solid var(--line); padding-block: 20px 36px; color: var(--muted); font-size: 0.9rem; }
 code { font-size: 0.95em; }
+
+.get { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; margin: 1.5rem 0 2rem; }
+.store {
+  display: inline-block; padding: .8rem 1.3rem; border-radius: 999px;
+  background: var(--brand); color: #1b0e05; font-weight: 600; text-decoration: none;
+}
+.store:focus-visible { outline: 3px solid var(--fg); outline-offset: 2px; }
+.price { color: var(--muted); font-size: .95rem; }
